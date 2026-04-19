@@ -1,0 +1,5 @@
+{"log":
+ [{"message":
+   ".> LEAN_PATH=.\\.\\.lake\\build\\lib PATH c:\\Users\\G5\\.elan\\toolchains\\leanprover--lean4---v4.15.0\\bin\\lean.exe .\\.\\.\\.\\Brainfuck\\Errors.lean -R .\\.\\.\\. -o .\\.\\.lake\\build\\lib\\Brainfuck\\Errors.olean -i .\\.\\.lake\\build\\lib\\Brainfuck\\Errors.ilean -c .\\.\\.lake\\build\\ir\\Brainfuck\\Errors.c --json",
+   "level": "trace"}],
+ "depHash": "5647779294134882592"}
