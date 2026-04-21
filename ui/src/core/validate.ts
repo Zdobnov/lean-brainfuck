@@ -1,4 +1,4 @@
-import type { Instruction, Program, ValidationError } from "./types.js";
+import type { Instruction, Program, ValidationError } from "./types.ts";
 
 const PAIR_SENTINEL = -1;
 
@@ -37,4 +37,16 @@ export function validate(instructions: readonly Instruction[]): Program | Valida
     instructions: [...instructions],
     jumpTable: { pair },
   };
+}
+
+export function stringToBytes(s: string): number[] {
+  return Array.from(s).map((c) => c.charCodeAt(0));
+}
+
+export function bytesToString(bytes: readonly number[]): string {
+  return String.fromCharCode(...bytes);
+}
+
+export function isValidationError(value: Program | ValidationError): value is ValidationError {
+  return "tag" in value;
 }
